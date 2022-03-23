@@ -1,7 +1,42 @@
 /* But you want show the comment line in css use these */
 /* scss interpolation  2+2 = 4 */
-.header-style {
-  color: #768397;
-  font-size: 30px;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  background-color: #349e7b !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400 !important;
+}
+
+.welcome-card {
+  background-color: white;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 35px;
+}
+
+.welcome-card h2 {
+  font-size: 40px;
+}
+
+.welcome-card p {
+  color: #8d693eb0;
+  font-family: "Inspiration", cursive;
+  font-size: 2rem;
+}
+
+.welcome-card .btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #349e7b !important;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  border: none;
 }
 /*# sourceMappingURL=main.css.map */

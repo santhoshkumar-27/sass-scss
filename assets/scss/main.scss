@@ -1,7 +1,55 @@
 // For scss comment only show in scss file
 /* But you want show the comment line in css use these */
 /* scss interpolation  2+2 = #{ 2+2} */
-.header-style {
-    color: rgb(118, 131, 151);
-    font-size: 30px;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+// this is for css variables
+// :root {
+//     --app-bg-color: rgb(52, 158, 123);
+// }
+
+//this is scss variables
+$app-bg-color: rgb(52, 158, 123) !important;
+$font-roboto: 'Roboto', sans-serif;
+$font-inspiration: 'Inspiration', cursive;
+// $app-bg-color: green !global; global keyword to change open
+
+* {
+    margin: 0px;
+    padding: 0px;
 }
+html,
+body {
+    background-color: $app-bg-color;
+    font-family: $font-roboto;
+    font-weight: 400 !important;
+}
+.welcome-card {
+    background-color: white;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 35px;
+}
+
+.welcome-card h2 {
+    font-size: 40px;
+}
+.welcome-card p {
+
+    color: #8d693eb0;
+    font-family: $font-inspiration;
+    font-size: 2rem;
+}
+.welcome-card .btn {
+    // $app-bg-color: rgb(158, 114, 19) !important !global;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: $app-bg-color;
+    font-family: $font-roboto;
+    border-radius: 5px;
+    border: none;
+}
+// .welcome-card .demo {
+//     background-color: $app-bg-color;
+//     color: white;
+// }
