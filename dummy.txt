@@ -1,0 +1,52 @@
+//this is scss variables
+// $app-bg-color: rgb(52, 158, 123) !important;
+// $font-roboto: "Roboto", sans-serif;
+// $font-inspiration: "Inspiration", cursive;
+// $font-weight: ("400", "500", "600");
+// $colors: (
+//     "primary": rgb(127, 127, 182),
+//     "secondary": lightblue,
+//     "success": lightgreen,
+//     "warning": rgb(146, 121, 121),
+// );
+// $app-bg-null: null;
+// $dark-mode: false;
+// // $app-bg-color: green !global; global keyword to change open
+// * {
+//     margin: 0px;
+//     padding: 0px;
+// }
+// html,
+// body {
+//     background-color: map-get($colors, "warning");
+//     font-family: $font-roboto;
+//     font-weight: 400 !important;
+// }
+// .welcome-card {
+//     background-color: white;
+//     margin: 30px;
+//     padding: 20px;
+//     border-radius: 35px;
+// }
+
+// .welcome-card h2 {
+//     font-size: 40px;
+// }
+// .welcome-card p {
+//     color: #8d693eb0;
+//     font-family: $font-inspiration;
+//     font-size: 2rem;
+// }
+// .welcome-card .btn {
+//     // $app-bg-color: rgb(158, 114, 19) !important !global;
+//     margin-top: 10px;
+//     padding: 10px 20px;
+//     background-color: $app-bg-color;
+//     font-family: $font-roboto;
+//     border-radius: 5px;
+//     border: none;
+// }
+// .welcome-card .demo {
+//     background-color: $app-bg-color;
+//     color: white;
+// }

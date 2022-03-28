@@ -1,0 +1,26 @@
+.header {
+    padding: 30px 50px !important;
+    display: flex;
+    justify-content: space-between;
+
+    &__menus {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    &__menu {
+        margin-right: 1rem;
+
+        &.active {
+            border-bottom: 3px solid $br-color;
+            a {
+                color: $br-color;
+            }
+        }
+
+        &:hover {
+            display: inline-block;
+            border-bottom: 3px solid $br-color;
+        }
+    }
+}

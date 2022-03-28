@@ -7,7 +7,6 @@
   padding: 0px;
 }
 
-/* $app-bg-null :red */
 html,
 body {
   background-color: #7f7fb6;
@@ -18,10 +17,6 @@ body {
 a {
   text-decoration: none;
   color: black;
-}
-
-.profile-picture {
-  background: url(./assets/img/dummy.jpg);
 }
 
 .header {
@@ -85,5 +80,10 @@ a {
   font-family: "Roboto", sans-serif;
   border-radius: 5px;
   border: none;
+}
+
+/* $app-bg-null :red */
+.profile-picture {
+  background: url(./assets/img/dummy.jpg);
 }
 /*# sourceMappingURL=main.css.map */
