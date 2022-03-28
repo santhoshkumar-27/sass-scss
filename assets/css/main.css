@@ -7,11 +7,54 @@
   padding: 0px;
 }
 
+/* $app-bg-null :red */
 html,
 body {
   background-color: #7f7fb6;
   font-family: "Roboto", sans-serif;
   font-weight: 400 !important;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.profile-picture {
+  background: url(./assets/img/dummy.jpg);
+}
+
+.header {
+  padding: 30px 50px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+.header__menu {
+  margin-right: 1rem;
+}
+
+.header__menu.active > a {
+  color: #ce2020;
+}
+
+.header__menu:hover {
+  display: inline-block;
+  border-bottom: 3px solid #ce2020;
 }
 
 .welcome-card {

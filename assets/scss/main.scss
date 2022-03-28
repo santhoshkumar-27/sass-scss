@@ -60,6 +60,7 @@
 //     background-color: $app-bg-color;
 //     color: white;
 // }
+
 $app-bg-color: rgb(52, 158, 123) !important;
 $font-roboto: "Roboto", sans-serif;
 $font-inspiration: "Inspiration", cursive;
@@ -70,19 +71,55 @@ $colors: (
     "success": lightgreen,
     "warning": rgb(146, 121, 121),
 );
-$app-bg-null: null;
+$app-bg-null: red;
 $dark-mode: false;
 // $app-bg-color: green !global; global keyword to change open
 * {
     margin: 0px;
     padding: 0px;
 }
+/* $app-bg-null :#{$app-bg-null} */
+// interpolation to use #{}
+$profile-name: "dummy";
 html,
 body {
     background-color: map-get($colors, "primary");
     font-family: $font-roboto;
     font-weight: 400 !important;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+.profile-picture {
+    background: url(./assets/img/#{$profile-name}.jpg);
+}
+// navigation
+.header {
+    padding: 30px 50px !important;
+    display: flex;
+    justify-content: space-between;
+
+    &__menus {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    &__menu {
+        margin-right: 1rem;
+
+        &.active > a {
+           color: #ce2020;
+        }
+
+        &:hover {
+            display: inline-block;
+            border-bottom: 3px solid #ce2020;
+        }
+    }
+    
+}
+// navigation-end
 .welcome-card {
     background-color: white;
     margin: 30px;
