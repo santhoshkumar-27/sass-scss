@@ -48,13 +48,17 @@ a {
   margin-right: 1rem;
 }
 
-.header__menu.active > a {
-  color: #ce2020;
+.header__menu.active {
+  border-bottom: 3px solid #21020d;
+}
+
+.header__menu.active a {
+  color: #21020d;
 }
 
 .header__menu:hover {
   display: inline-block;
-  border-bottom: 3px solid #ce2020;
+  border-bottom: 3px solid #21020d;
 }
 
 .welcome-card {

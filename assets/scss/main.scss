@@ -65,6 +65,7 @@ $app-bg-color: rgb(52, 158, 123) !important;
 $font-roboto: "Roboto", sans-serif;
 $font-inspiration: "Inspiration", cursive;
 $font-weight: ("400", "500", "600");
+$br-color: #21020d;
 $colors: (
     "primary": rgb(127, 127, 182),
     "secondary": lightblue,
@@ -108,16 +109,18 @@ a {
     &__menu {
         margin-right: 1rem;
 
-        &.active > a {
-           color: #ce2020;
+        &.active {
+            border-bottom: 3px solid $br-color;
+            a {
+                color: $br-color;
+            }
         }
 
         &:hover {
             display: inline-block;
-            border-bottom: 3px solid #ce2020;
+            border-bottom: 3px solid $br-color;
         }
     }
-    
 }
 // navigation-end
 .welcome-card {
