@@ -1,0 +1,28 @@
+@use '../abstract/index' as *;
+.btn {
+   
+
+    &-default {
+        @include btn(#000);
+    }
+
+    &-primary {
+        background-color: $bg-primary;
+        @include btn;
+    }
+
+    &-secondary {
+        background-color: $bg-secondary;
+        @include btn;
+    }
+
+    &-success {
+        background-color: $bg-success;
+        @include btn;
+    }
+
+    &- {
+        background-color: $bg-warning;
+        @include btn;
+    }
+}

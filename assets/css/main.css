@@ -64,6 +64,41 @@ a {
   border: none;
 }
 
+.btn-default {
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  color: #000;
+}
+.btn-primary {
+  background-color: #28afe0 !important;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+}
+.btn-secondary {
+  background-color: #242027 !important;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+}
+.btn-success {
+  background-color: #00bd48 !important;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+}
+.btn- {
+  background-color: #d0d32e !important;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+}
+
 /* But you want show the comment line in css use these */
 /* scss interpolation  2+2 = 4 */
 /* $app-bg-null :red

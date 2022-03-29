@@ -10,8 +10,9 @@
 @use "./abstract/index" as *;
 // font style
 @use "./base/base" as b;
-@use "./layouts/header";
-@use "./pages/homepage";
+@use "./layouts/header" as *;
+@use "./pages/homepage" as *;
+@use "./components/components" as *;
 
 $dark-mode: false;
 // $app-bg-color: green !global; global keyword to change open
