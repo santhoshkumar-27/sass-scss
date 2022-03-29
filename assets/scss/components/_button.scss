@@ -1,7 +1,5 @@
-@use '../abstract/index' as *;
+@use "../abstract/index" as *;
 .btn {
-   
-
     &-default {
         @include btn(#000);
     }
