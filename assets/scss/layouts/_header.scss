@@ -1,3 +1,7 @@
+@use '../abstract/index' as i;
+
+
+
 .header {
     padding: 30px 50px !important;
     display: flex;
@@ -12,15 +16,15 @@
         margin-right: 1rem;
 
         &.active {
-            border-bottom: 3px solid $br-color;
+            border-bottom: 3px solid i.$br-color;
             a {
-                color: $br-color;
+                color: i.$br-color;
             }
         }
 
         &:hover {
             display: inline-block;
-            border-bottom: 3px solid $br-color;
+            border-bottom: 3px solid i.$br-color;
         }
     }
 }

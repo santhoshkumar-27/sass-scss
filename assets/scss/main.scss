@@ -7,19 +7,22 @@
 //     --app-bg-color: rgb(52, 158, 123);
 // }
 // color imports
-@import "./abstract/color";
+@use "./abstract/index" as *;
 // font style
-@import "./abstract/font";
-@import "./base/reset";
-@import "./base/typography";
-@import "./layouts/header";
-@import "./pages/homepage";
+@use "./base/base" as b;
+@use "./layouts/header";
+@use "./pages/homepage";
 
 $dark-mode: false;
 // $app-bg-color: green !global; global keyword to change open
-/* $app-bg-null :#{$app-bg-null} */
+/* $app-bg-null :#{$app-bg-null}
+{i.$app-bg-null} */
 // interpolation to use #{}
-$profile-name: "dummy";
+
 .profile-picture {
     background: url(./assets/img/#{$profile-name}.jpg);
 }
+
+// @import 
+
+// @use is act us separate module
