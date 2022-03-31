@@ -7,7 +7,7 @@
 
 html,
 body {
-  background-color: #7f7fb6;
+  background-color: #454c4e;
   font-family: "Roboto", sans-serif;
   font-weight: 400 !important;
 }
@@ -71,28 +71,28 @@ a {
   color: #000;
 }
 .btn-primary {
-  background-color: #28afe0 !important;
+  background-color: #454c4e;
   padding: 10px 30px;
   border-radius: 10px;
   border: none;
   color: #fff;
 }
 .btn-secondary {
-  background-color: #242027 !important;
+  background-color: #3e8091;
   padding: 10px 30px;
   border-radius: 10px;
   border: none;
   color: #fff;
 }
 .btn-success {
-  background-color: #00bd48 !important;
+  background-color: #00bd48;
   padding: 10px 30px;
   border-radius: 10px;
   border: none;
   color: #fff;
 }
 .btn-warning {
-  background-color: #d0d32e !important;
+  background-color: #d0d32e;
   padding: 10px 30px;
   border-radius: 10px;
   border: none;
