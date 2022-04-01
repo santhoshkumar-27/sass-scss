@@ -107,4 +107,10 @@ a {
   background: url(./assets/img/dummy.jpg);
 }
 
+/* app-color: #454c4e */
+.demo {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=main.css.map */

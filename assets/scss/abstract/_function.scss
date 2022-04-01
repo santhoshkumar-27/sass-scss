@@ -1,5 +1,5 @@
 @use './variables' as *;
 
-@function base-colors ($varient) {
+@function base-colors ($varient: 'primary') {
     @return map-get($colors, $varient)
 }
