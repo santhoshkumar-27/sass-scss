@@ -73,3 +73,31 @@ $second-num: 2;
 // @debug not false;
 // @debug true and true;
 // @debug false or true;
+
+// @for $i from 1 to 6 {
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: 10px * (10 - $i) !important;
+        color: rgb(random(255), random(255), random(255));
+    }
+}
+
+// h1 {
+//     font-size: 10px !important;
+// }
+// h2 {
+//     font-size: 20px !important;
+// }
+// h3 {
+//     font-size: 30px !important;
+// }
+// h4 {
+//     font-size: 40px !important;
+// }
+// h5 {
+//     font-size: 50px !important;
+// }
+// h6 {
+//     font-size: 60px !important;
+// }

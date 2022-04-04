@@ -128,4 +128,34 @@ a {
   font-weight: 600;
 }
 
+h1 {
+  font-size: 90px !important;
+  color: #02f71f;
+}
+
+h2 {
+  font-size: 80px !important;
+  color: #d641c5;
+}
+
+h3 {
+  font-size: 70px !important;
+  color: #9b7aa1;
+}
+
+h4 {
+  font-size: 60px !important;
+  color: #dee6ba;
+}
+
+h5 {
+  font-size: 50px !important;
+  color: #c255bc;
+}
+
+h6 {
+  font-size: 40px !important;
+  color: #bedc11;
+}
+
 /*# sourceMappingURL=main.css.map */
