@@ -1,5 +1,5 @@
 $app-bg-color: rgb(52, 158, 123) !important;
-$br-color: #21020d;
+$br-color: #a57a89;
 $colors: (
     "primary": #454c4e,
     "secondary": #3e8091,
@@ -12,3 +12,26 @@ $profile-name: "dummy";
 // $bg-secondary: #242027 !important;
 // $bg-success: #00bd48 !important;
 // $bg-warning: #d0d32e !important;
+
+$text-limit-color: #fff;
+$text-limit: 10;
+
+// @if $text-limit <= 3{
+//     $text-limit-color: rgb(55, 55, 192);
+// }
+// @if $text-limit > 3 and $text-limit <= 6{
+//     $text-limit-color: rgb(104, 145, 104);
+// }
+// @if $text-limit > 6 {
+//     $text-limit-color: rgb(138, 138, 119);
+// }
+
+@if $text-limit <= 3 and $text-limit >0 {
+    $text-limit-color: rgb(55, 55, 192);
+}
+@else if $text-limit > 3 and $text-limit <=6 {
+    $text-limit-color: lightblue;
+}
+@else {
+    $text-limit-color: lightgreen;
+}

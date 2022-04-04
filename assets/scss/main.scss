@@ -14,7 +14,7 @@
 @use "./layouts/header" as *;
 @use "./pages/homepage" as *;
 @use "./components/components" as *;
-
+@use "sass:math";
 $dark-mode: false;
 // $app-bg-color: green !global; global keyword to change open
 /* $app-bg-null :#{$app-bg-null}
@@ -25,7 +25,7 @@ $dark-mode: false;
     background: url(./assets/img/#{$profile-name}.jpg);
 }
 
-// @import 
+// @import
 // @error "this is app base color #{base-colors()}";
 
 // @warn "this is error message";
@@ -33,15 +33,15 @@ $dark-mode: false;
 // @debug "this is a debug message";
 
 // @use is act us separate module
-/* app-color: #{base-colors('primary')} */ 
+/* app-color: #{base-colors('primary')} */
 
 $font: (
     "font": (
         "size": 1rem,
         "weight": 600,
-    )
+    ),
 );
-// this is use map function 
+// this is use map function
 // @debug "this is map.get of the function #{map.get($font, 'font', 'size')}";
 .demo {
     font-size: 1rem;
@@ -51,25 +51,25 @@ $font: (
 $first-num: 1;
 $second-num: 2;
 
-@debug " #{$first-num} #{$second-num}";
-@debug " #{$first-num == $second-num}";
-@debug " #{$first-num != $second-num}";
+// @debug " #{$first-num} #{$second-num}";
+// @debug " #{$first-num == $second-num}";
+// @debug " #{$first-num != $second-num}";
 
-@debug 1 == 1;
-@debug 2 > 3;
-@debug 1 < 4;
-@debug 1 >= -1;
-@debug -9 <= 1;
-@debug 10s + 10s;
-@debug 1rem - 0.5rem;
-@debug 1 * 2;
-@debug 10rem % 3;
+// @debug 1 == 1;
+// @debug 2 > 3;
+// @debug 1 < 4;
+// @debug 1 >= -1;
+// @debug -9 <= 1;
+// @debug 10s + 10s;
+// @debug 1rem - 0.5rem;
+// @debug 1 * 2;
+// @debug 10rem % 3;
 
-@debug 'santhosh' + 'kumar';
-@debug 'kumar' + 'santhosh';
-@debug true;
-@debug false;
-@debug not true;
-@debug not false;
-@debug true and true;
-@debug false or true;
+// @debug 'santhosh' + 'kumar';
+// @debug 'kumar' + 'santhosh';
+// @debug true;
+// @debug false;
+// @debug not true;
+// @debug not false;
+// @debug true and true;
+// @debug false or true;
