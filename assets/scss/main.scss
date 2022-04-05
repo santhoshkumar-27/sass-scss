@@ -8,6 +8,7 @@
 // }
 // color imports
 @use "sass:map";
+@use "sass:string";
 @use "./abstract/index" as *;
 // font style
 @use "./base/base" as b;
@@ -75,14 +76,22 @@ $second-num: 2;
 // @debug false or true;
 
 // @for $i from 1 to 6 {
-
-@for $i from 1 through 6 {
-    h#{$i} {
-        font-size: 10px * (10 - $i) !important;
+// for loop
+// @for $i from 1 through 6 {
+//     h#{$i} {
+//         font-size: 10px * (10 - $i) !important;
+//         color: rgb(random(255), random(255), random(255));
+//     }
+// }
+// while loop
+$count : 1;
+@while  $count < 7  {
+    h#{$count} {
+        font-size: 10px * (10 - $count) !important;
         color: rgb(random(255), random(255), random(255));
     }
+    $count: $count + 1;
 }
-
 // h1 {
 //     font-size: 10px !important;
 // }
@@ -101,3 +110,29 @@ $second-num: 2;
 // h6 {
 //     font-size: 60px !important;
 // }
+
+$spacing: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
+$directions: top, right, left, bottom;
+
+@each $i in $spacing{
+    .m-#{$i} {
+        margin: 1rem * $i;
+    }
+    @each $j in $directions {
+        .m#{string.slice($j, 0, 1)}-#{$i} {
+            margin-#{$j}: 1rem * $i;
+        }
+    }
+    // .ms-#{$i} {
+    //     margin-left: 1rem * $i;
+    // }
+    // .me-#{$i} {
+    //     margin-right: 1rem * $i;
+    // }
+    // .mt-#{$i} {
+    //     margin-top: 1rem * $i;
+    // }
+    // .ml-#{$i} {
+    //     margin-bottom: 1rem * $i;
+    // }
+}   
